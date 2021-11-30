@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  font-family: helvetica, 'apple sd gothic neo', 'Noto Sans KR';
+  font-weight: 900;
+  line-height: 1.9;
+  font-size: 18px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden;}
+
+.cir-button {
+  position: absolute;
+  width: 40px;
+}
+
+.header {
+  height: 60px;
+  margin-top: 32px;
+}
+
+#newtype {
+  width: 200px;
+  float: left;
+  margin-left: 32px;
+}
+
+#e {
+  width: 20px;
+  float: right;
+  margin-right: 32px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-anim-container {
+  position: absolute;
+  width: 32%;
+	animation: rotation 7s infinite linear;
+}
+
+.cycle-anim-container {
+  position: absolute;
+  width: 45%;
+	animation: swing 2s infinite cubic-bezier(0.6, 0.0, 0.4, 1) alternate;
+}
+
+#main-section3-btn {
+  position: absolute;
+  left: -200px;
+  top: 100px;
+  animation: line 3s infinite linear;
+}
+
+#logo {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  opacity: 1;
+  z-index: 10;
+}
+
+#logo .circles {
+  opacity: 0;
+	animation: fadeout 0.8s 1 linear 0.9s forwards;
+	-webkit-animation: fadeout 0.8s 1 linear 0.9s forwards;
+}
+
+#logo .rects {
+  opacity: 0;
+	animation: fadeout 0.8s 1 linear 2.65s forwards;
+	-webkit-animation: fadeout 0.8s 1 linear 2.65s forwards;
+}
+
+#logo #h1 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 4.30s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.30s forwards;
+}
+#logo #h2 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 4.43s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.43s forwards;
+}
+#logo #h3 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 5.55s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.55s forwards;
+}
+#logo #h4 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 4.67s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.67s forwards;
+}
+#logo #h5 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 4.78s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.78s forwards;
+}
+#logo #h6 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 4.89s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 4.89s forwards;
+}
+#logo #h7 {
+	opacity: 1;
+	animation: fadein 0.0s 1 linear 5.01s forwards;
+	-webkit-animation: fadein 0.0s 1 linear 5.01s forwards;
+}
+
+.section-frame {
+  position: relative;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.section1-frame {
+  background-color: white;
+}
+
+.section2-frame {
+  background-color: black;
+}
+
+.section3-frame {
+  background-color: black;
+}
+
+.section1-game {
+  width: 640px;
+  height: 420px;
+  display: none;
+}
+
+.section3-fadeout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.section3-fadeout.fadeout-anim {
+	animation: fadeout 3s 1 linear;
+	-webkit-animation: fadeout 3s 1 linear;
+  opacity: 1;
+}
+
+.section3-fadeout.fadeout-fast-anim {
+	animation: fadeout 1.2s 1 ease-out;
+	-webkit-animation: fadeout 1.2s 1 ease-out;
+  opacity: 1;
+}
+
+.section3-fadeout.fadein-anim {
+	animation: fadein 1.2s 1 ease-in;
+	-webkit-animation: fadein 1.2s 1 ease-in;
+  opacity: 0;
+}
+
+@keyframes fadeout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadein {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.section-next-btn {
+  position: absolute;
+}
+
+.submenu-icon {
+	width: 40px;
+}
+
+.line-submenu-icon {
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+.cycle-submenu-icon {
+	animation: rotation 2s infinite linear;
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+.circle-submenu-icon {
+	animation: rotationY 3s infinite linear;
+	-webkit-animation: rotationY 3s infinite linear;
+}
+
+/* Credits */
+.credits-frame {
+  justify-content: space-between;
+}
+
+.credits-frame .b {
+  font-weight: bold;
+}
+
+.credits-frame .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.credits-frame .right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.credits-frame-mobile {
+  z-index: 20;
+  width: 90%;
+  background-color: white;
+}
+
+
+@keyframes line {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(2000px, 0px);
+  }
+}
+@-webkit-keyframes line {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(2000px, 0);
+  }
+}
+
+@keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359.9deg);
+	}
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359.9deg);
+	}
+}
+
+@keyframes swing {
+	from {
+			-webkit-transform: rotate(17.5deg);
+	}
+	to {
+			-webkit-transform: rotate(-190deg);
+	}
+}
+
+@keyframes rotationY {
+	from {
+			-webkit-transform: rotateY(0deg);
+	}
+	to {
+			-webkit-transform: rotateY(359.9deg);
+	}
+}
+
+@-webkit-keyframes rotationY {
+	from {
+			-webkit-transform: rotateY(0deg);
+	}
+	to {
+			-webkit-transform: rotateY(359.9deg);
+	}
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+

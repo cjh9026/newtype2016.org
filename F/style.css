@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.eot);
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.eot?#iefix) format('embedded-opentype'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.woff) format('woff'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Regular.eot);
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Regular.eot?#iefix) format('embedded-opentype'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Regular.woff) format('woff'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.eot);
+  src: url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.woff) format('woff'),
+       url(http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.ttf) format('truetype');
+}
+
+
+
+ 
+a:link { color: #000; text-decoration: none; }
+a:visited { color: #000; text-decoration: none; }
+a:hover { color: #fff; font-weight:bold; text-decoration: none; }
+a:active { color: #000; font-weight:bold; }
+*::-moz-selection {
+    background-color: #000; color: #000;;
+}
+*::selection {
+    color: #000; background-color: #000;}
+
+
+
+
+html, body {
+font-family: 'Work Sans', KoPub Dotum, sans-serif;
+color:#000;
+background-color:#fff;
+width:100%; margin:0; padding:0;
+font-size:2.4vw;
+line-height:1.6;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+p { font-size:14px;}
+
+.column-container{
+	display:table;
+	width:100%;
+}
+
+
+.column-container-box{
+	display:table-row;
+}
+.column01 { display:table-cell; 
+	padding-top:1em; z-index:1; width:31%;}
+.column02 { display:table-cell; 
+	padding-top:1em; z-index:1;width:69%; text-align:justify;}
+
+
+
+
+
+.column01-content { display:table-cell; padding:1em; z-index:1; width:45%;  word-break : keep-all; vertical-align:top;}
+.column02-content { display:table-cell; padding:1em; z-index:1;width:50%; word-break : keep-all; vertical-align:top;}
+
+
+@media screen and (max-width:680px) {
+body {  font-size:4.3vw;   width:100%; margin:0 auto; padding:0; }
+.column01-content { display:inline-block;  padding:1em;  z-index:1; width:98%;  word-break : keep-all;}
+.column02-content { display:inline-block;  padding:1em; z-index:1;width:98%; word-break : keep-all;}
+.column-container{ display:table; width:90%;}
+
+
+
+
+
+}
+
+
+
+.title-center { margin:0 auto; width:100%; text-align:center;}
+.title { padding:1em; text-align:center; white-space: nowrap; font-weight:bold; }

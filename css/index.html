@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>New Type C</title>
+ <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no"/>   
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://neinfest.org/1/js/jquery.word-break-keep-all.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//이 한 줄로 실행한다.
+	$('.text_wrap').wordBreakKeepAll();
+
+	//IE에서는 플러그인을 사용하지 않고 CSS로 처리하고 싶은 경우 이렇게 옵션을 주면 된다.
+	//$('.text_wrap').wordBreakKeepAll({OffForIE: true});
+
+	//IE에서 플러그인을 사용하되 CSS를 적용하는 게 아니라 비 IE 브라우저처럼 적용하고 싶을 때 이렇게 옵션을 준다.
+	//$('.text_wrap').wordBreakKeepAll({useCSSonIE: false});
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script> 
+
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+<style type="text/css">
+
+@font-face {
+  font-family: 'Dotum';
+  src: url('http://newtype2016.org/css/KoPubDotumPM.eot'); /* IE9 Compat Modes */
+  src: url('http://newtype2016.org/css/KoPubDotumPM.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('http://newtype2016.org/css/KoPubDotumPM.woff') format('woff'), /* Modern Browsers */
+       url('http://newtype2016.org/css/KoPubDotumPM.ttf')  format('truetype'), /* Safari, Android, iOS */;
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
+a:link { color: #FC9; text-decoration: none; }
+a:visited { color: #fff; text-decoration: none; }
+a:hover { color: #fff; text-decoration: none; }
+a:active { color: #fff;}
+
+*::-moz-selection {
+    background-color: #000; color: #fff;;
+}
+*::selection {
+    color: #fff; background-color: #000;}
+
+body {
+		-webkit-text-size-adjust: 100%; -ms-text-size-adjust: none;
+			background: url(background.png) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+  height:100%;
+  background-color:#000;
+  color:#fff;
+  margin:0;
+  font-weight:700;
+  font-weight:bold;
+font-family: 'Permanent Marker', Sandoll GothicNeo, Dotum, sans-serif;}
+.container-center { width:100%; margin:0 auto; text-align:center;}
+.container { width:100%; margin:0 auto;}
+.box { width:100%; display: table-column;}
+.title {margin:0.5em; float:left;  position:relative; background:rgba(255,0,0,0.9); border:1px solid #000; color:#fff; font-size:3vw; width:20%; height:100%; text-align:center; padding:0.5em; text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);}
+.contents {float:left;  position:relative; background:rgba(255,0,0,0.9); border:1px solid #000; font-size:3vw; line-height:1.7; width:69%; text-align:left; padding:0.5em; margin:0 auto; text-shadow: 0px 0px 1px rgba(0, 0, 0, 1); z-index:12;}
+.background { width:100%; height:2000px; position:absolute; top:100%; background-image:url(background2.png); z-index:-1; display:none; }
+
+
+
+	.contents:hover{
+    -webkit-animation-name: kyuhokim1;
+    animation-name: kyuhokim1;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;}
+	
+@keyframes kyuhokim1 {
+    from {
+		background:rgba(255,0,0,0.9);
+    }
+    
+    to {
+		background:rgba(0,0,0,0.9);
+    }
+}
+@-webkit-keyframes kyuhokim1 {
+    from {
+		background:rgba(255,0,0,0.9);
+    }
+    
+    to {
+		background:rgba(0,0,0,0.9);
+    }
+}
+
+@media (max-width:800px) and (min-width:0px) {
+.title { font-size:22px;}
+body { font-weight:bold;}
+.contents { top:100%; position:absolute; font-size:22px; line-height:1.7; width:auto; text-align:left; padding-left:1em; padding-right:1em; margin:0 auto; text-shadow: 0px 0px 2px rgba(150, 150, 150, 1); z-index:12; padding-bottom:2em;}}
+</style>
+</head>
+
+ <body>
+ <head>
+
+
+
+<div class="container-center">
+<div class="container">
+
+<div class="title"><div class="text_wrap">
+New Type Ⓒ 병아리와 토끼들 </p>
+
+←<br />
+Ⓐ<font style="letter-spacing:-9px; opacity:0;">.</font>Ⓑ
+</div></div>
+
+<div class="contents" style="margin-top:100px;"><div class="text_wrap">
+2016년 12월 31일 토요일 오후 7시 <br />
+탈영역 우정국</p>
+
+정진화의 공연 연작 New Type의 세 번째 작품으로 , 퍼포먼스-상품을 약 40분간 열리는 공연-시장 안에 배치하는 실험이다. 공연-시장에 접근해 퍼포머-판매자를 만나기 위해 관객-소비자는 예약-쿠폰이 필요하다. 본 공연의 "퍼폼2016" 초청작으로 제작되었다. <br />
+<a href="https://goo.gl/forms/Zk4gVDsOc8QyTcr82" target="_blank"> 예매 페이지 링크</a><br />
+<br />
+<img src="card.png" width="100%"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="40%" valign="top">컨셉<br />연출</td>
+    <td width="60%" valign="top">정진화</td>
+  </tr>
+  <tr>
+    <td valign="top">출연</td>
+    <td valign="top">박민희<br />
+      임정하</td>
+  </tr>
+  <tr>
+    <td valign="top">웹</td>
+    <td valign="top">김규호</td>
+  </tr>
+  <tr>
+    <td valign="top">이미지 제공</td>
+    <td valign="top">퍼폼<br />
+-그래픽 디자인 워크스 <br />
+-게임 디자인 김영수 </td>
+  </tr>
+  <tr>
+    <td valign="top">주최<br />주관</td>
+    <td valign="top">퍼폼</td>
+  </tr>
+  <tr>
+    <td valign="top">후원</td>
+    <td valign="top">예술경영지원센터<br />
+      과자전</td>
+  </tr>
+  <tr>
+    <td valign="top">협력</td>
+    <td valign="top">아이디언<br />
+      탈영역 우정국</td>
+  </tr>
+</table>
+</div></div>
+
+</div>
+</div>
+</div>
+<div class="background"> </div>
+</body>
+</html>
